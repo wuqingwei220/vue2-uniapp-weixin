@@ -1,0 +1,237 @@
+{
+	"pages": [
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh":true
+			}
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/stats/index",
+			"style": {
+				"navigationBarTitleText": "统计",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root":"pagesA",
+			"pages":[
+				{
+					"path": "login/pass-code",
+					"style": {
+						"navigationBarTitleText": "登陆",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+						
+					}
+				},
+				{
+					"path": "login/pass-word",
+					"style": {
+						"navigationBarTitleText": "登陆",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "reg/index",
+					"style": {
+						"navigationBarTitleText": "注册",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "order/index",
+					"style": {
+						"navigationBarTitleText": "下单",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "order/detail",
+					"style": {
+						"navigationBarTitleText": "订单详情",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "order/feedback",
+					"style": {
+						"navigationBarTitleText": "问题反馈",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				}
+				,
+				{
+					"path": "user/seting",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "user/modify-phone",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom"
+					}
+				}
+				,
+				{
+					"path": "user/bind-phone",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom"
+					}
+				}
+				,
+				{
+					"path": "user/auth",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root":"pagesB",
+			"pages":[
+				{
+					"path": "agreement",
+					"style": {
+						"navigationBarTitleText": "隐私政策",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+						
+					}
+				},
+				{
+					"path": "privacy",
+					"style": {
+						"navigationBarTitleText": "服务协议",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+						
+					}
+				},
+				{
+					"path": "about",
+					"style": {
+						"navigationBarTitleText": "关于我们",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+						
+					}
+				},
+				{
+					"path": "help",
+					"style": {
+						"navigationBarTitleText": "帮助",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+				}
+			
+			]
+		}
+
+	],
+	"preloadRule": {
+		"pages/home/index": {
+		  "network": "all",
+		  "packages": ["pagesA","pagesB"]
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-cell": "/wxcomponents/vant/dist/cell/index",
+			"van-cell-group": "/wxcomponents/vant/dist/cell-group/index",
+			"van-button": "/wxcomponents/vant/dist/button/index",
+			"van-field": "/wxcomponents/vant/dist/field/index",
+			"van-popup": "/wxcomponents/vant/dist/popup/index",
+			"van-loading": "/wxcomponents/vant/dist/loading/index",
+			"van-dialog": "/wxcomponents/vant/dist/dialog/index",
+			"van-tab": "/wxcomponents/vant/dist/tab/index",
+			"van-tabs": "/wxcomponents/vant/dist/tabs/index",
+			"van-picker": "/wxcomponents/vant/dist/picker/index",
+			"van-switch": "/wxcomponents/vant/dist/switch/index",
+			"van-calendar": "/wxcomponents/vant/dist/calendar/index",
+			"van-checkbox": "/wxcomponents/vant/dist/checkbox/index",
+			"van-checkbox-group": "/wxcomponents/vant/dist/checkbox-group/index",
+			"van-overlay": "/wxcomponents/vant/dist/overlay/index",
+			"van-toast": "/wxcomponents/vant/dist/toast/index",
+			"van-radio": "/wxcomponents/vant/dist/radio/index",
+			"van-radio-group": "/wxcomponents/vant/dist/radio-group/index",
+			"van-datetime-picker": "/wxcomponents/vant/dist/datetime-picker/index",
+			"van-uploader": "/wxcomponents/vant/dist/uploader/index",
+			"van-tag": "/wxcomponents/vant/dist/tag/index",
+			"van-collapse": "/wxcomponents/vant/dist/collapse/index",
+			"van-collapse-item": "/wxcomponents/vant/dist/collapse-item/index",
+			"van-steps": "/wxcomponents/vant/dist/steps/index",
+			"van-dropdown-menu": "/wxcomponents/vant/dist/dropdown-menu/index",
+			"van-dropdown-item": "/wxcomponents/vant/dist/dropdown-item/index",
+			"van-icon": "/wxcomponents/vant/dist/icon/index",
+			"van-swipe-cell": "/wxcomponents/vant/dist/swipe-cell/index",
+			"van-area": "/wxcomponents/vant/dist/area/index"
+		}
+	},
+	"tabBar": {
+		"selectedColor":"#79D5AD",
+		"color": "#999999",
+		"backgroundColor":"#ffffff",
+		"borderStyle": "white",
+		"list": [{   
+			"pagePath":"pages/home/index",
+			"text": " "
+		},{
+			"pagePath":"pages/order/index",
+			"text": " "
+		}
+		,{
+			"pagePath":"pages/stats/index",
+			"text": " "
+		}
+		,{
+			"pagePath":"pages/user/index",
+			"text": " "
+		}
+	]
+   }
+   ,"condition": { //模式配置，仅开发期间生效
+   "current": 0, //当前激活的模式(list 的索引项)
+   "list": [
+	   {
+		   "name": "", //模式名称
+		   "path": "", //启动页面，必选
+		   "query": "" //启动参数，在页面的onLoad函数里面得到
+	   }
+   ]
+}
+}
